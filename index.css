@@ -1,0 +1,336 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    height: 6rem;
+    background-color: rgb(197, 197, 197);
+    display: flex;
+}
+
+.nav-logo{
+    height: 100%;
+    width: 19rem;
+    /* background-color: rgb(193, 109, 109); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo .logo i{
+    font-size: 3.5rem;
+}
+
+.nav-logo .name{
+    font-family: cursive ;
+    letter-spacing: 2px;
+}
+
+.navbar .search{
+    display: flex;
+    width:45rem;
+    height: 6rem;
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .search input{
+    width: 25rem;
+    height: 2rem;
+    border: 2px solid transparent;
+    border-top-left-radius: .9rem;
+    border-bottom-left-radius: .9rem;
+}
+
+.navbar .search button{
+    height: 2rem;
+    width: 4rem;
+    font-size: .9srem;
+    letter-spacing:.4px;
+    background-color: rgb(177, 56, 0);
+    color: antiquewhite;
+    border: 2px solid transparent;
+    border-top-right-radius: .9rem;
+    border-bottom-right-radius: .9rem;
+}
+
+.navbar .search button:active{
+    background-color: rgb(228, 99, 39);
+    font-size: 1rem;
+    transition: all .15s ease-in-out;
+}
+
+
+.login{
+    height: 6rem;
+    width: 15.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.login button{
+    height: 4.3rem;
+    width: 4.3rem;
+    position: fixed;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(205, 126, 77);
+    color: black;
+}
+.login button:hover{
+    scale: 1.2;
+    transition: all .2s ease-in-out;
+    color: white;
+    background-color: rgb(49, 47, 44);
+}
+.login button:active{
+    scale: .9;
+    color: rgb(255, 102, 46);
+    transition: all .2s ease-in-out;
+}
+
+
+.navbar-2{
+    display: flex;
+    background-color: rgb(18, 35, 49);
+    gap: 3rem;
+    padding: 0 3rem;
+    height: 2rem;
+    
+    align-items: center;
+}
+
+.navbar-2 .items{
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-2 .items a{
+    padding: .4rem .8rem;
+    /* background-color: rgb(147, 147, 80); */
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    border: 1px solid transparent;
+}
+.navbar-2 .items a:hover{
+    border: 1px solid rgb(255, 255, 255);
+    /* background-color: rgb(0, 63, 63); */
+    transition: all .2s ease-in-out;
+    color: rgb(87, 255, 255);
+}
+
+/* This is Section - 1  */
+
+.sec-1{
+    height:140vh;
+}
+
+.sec-1::before{
+    content: "";
+    background-image: url("Pictures/firm-4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:140vh;   
+    width: 100vw;
+    z-index: -2;
+    opacity: .7;
+
+}
+
+.sec-1 .vlog{
+    /* background-color: rgb(132, 151, 167); */
+    
+    width: 69vw;
+    
+}
+
+
+
+.vlog h2{
+    font-size: 4rem;
+    padding: 8rem 0 4rem 10rem;
+    color: rgb(255, 123, 99);
+    text-shadow: 2px 2px 2px rgb(62, 61, 61);
+}
+
+
+.vlog p{
+    padding-left: 10rem;
+    font-size: 1.5rem;
+    line-height:2rem;
+    text-shadow: 1px 1px 1px rgb(124, 122, 122);
+}
+
+
+.sec-2{
+    height: 125vh;
+    margin-top: 1rem;
+}
+
+.sec-2::before{
+    content: "";
+    background-image: url("Pictures/award-bg.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:125vh;   
+    width: 100vw;
+    z-index: -2;
+    opacity: .4;
+}
+
+.sec-2 h3{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px gray;
+}
+
+
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .col{
+    width: 25vw;
+    border:none;
+    background-color: rgb(241, 238, 234);
+    border-radius: 1rem;
+    box-shadow: -2px 3px 10px gray;
+}
+
+.container .col:hover{
+    scale: 1.1;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+
+.container .col img{
+    width: 25vw;
+    height: 25vw;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.container .col h4{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    
+}
+
+.container .col p{
+    padding: 0 2rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container .col button{
+    padding: .4rem 1rem;
+    margin: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+
+.sec-3{
+    /* border: 2px solid black; */
+    text-align: center;
+    height: 120vh;
+    background-color: rgb(212, 212, 212);
+}
+
+.sec-3 h4{
+    font-size: 1.5rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.sec-3 img{
+    width: 40rem;
+    border-radius: 46%;
+
+}
+
+.container-2{
+    display:grid;
+    gap: 6rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 0 5rem;
+    /* border: 2px solid red; */
+    
+}
+
+
+
+.container-2 h5{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: rgb(110, 63, 1);
+}
+
+
+.foot-1{
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    text-align: center;
+}
+
+.foot-2{
+    display: flex;
+    background-color: rgb(14, 13, 13);
+    color: white;
+    margin-top: .5rem
+    ;
+    justify-content: space-evenly;
+
+}
+
+.foot-items{
+    padding: 1rem;
+}
+
+.foot-3{
+    background-color: beige;
+    margin: .5rem 0;
+}
+
+.foot-3 p{
+    text-align: center;
+    font-size: 1rem;
+    padding:1rem 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
